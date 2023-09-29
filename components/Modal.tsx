@@ -29,7 +29,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onChange, title, description, chi
                     </div>
                     <Dialog.Close asChild>
                         <button className="text-neutral-400 hover:text-white absolute top-[10px] right-[10px]
-                        inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:outline-none">
+                        inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:outline-none ">
                             <AiOutlineClose/>
                         </button>
                     </Dialog.Close>
