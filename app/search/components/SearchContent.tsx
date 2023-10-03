@@ -2,7 +2,7 @@
 
 import {Song} from "@/types";
 import React from "react";
-import MediaItem from "@/app/(site)/components/MediaItem";
+import MediaItem from "@/components/MediaItem";
 
 interface SearchContent {
     songs: Song[];
@@ -20,6 +20,7 @@ const SearchContent: React.FC<SearchContent> = ({ songs }) => {
                     <div className="flex-1">
                         <MediaItem song={song} onClick={()=>{}}/>
                     </div>
+                    <LikeButton songId={song.id}/>
                 </div>
             )) }
         </div>

@@ -2,7 +2,8 @@
 
 import {Song} from "@/types";
 import useLoadImage from "@/hooks/useLoadImage";
-import PlayButton from "@/app/(site)/components/PlayButton";
+import PlayButton from "@/components/PlayButton";
+import Image from "next/image";
 
 interface SongItemProps {
     data: Song;
