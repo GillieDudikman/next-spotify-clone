@@ -36,7 +36,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({ songId }) => {
         fetchData()
     }, [songId, supabaseClient, user?.id]);
 
-    const Icon = isLiked ? <AiFillHeart/> : <AiOutlineHeart/>;
+    const Icon = isLiked ? AiFillHeart : AiOutlineHeart;
 
     const handleLike = async () => {
         if(!user)
