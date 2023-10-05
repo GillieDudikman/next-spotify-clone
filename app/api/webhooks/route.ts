@@ -1,8 +1,8 @@
 import {headers} from "next/headers";
 import Stripe from "stripe";
-import * as stripe from "stripe";
 import {NextResponse} from "next/server";
 import {manageSubscriptionStatusChange, upsertPriceRecord, upsertProductRecord} from "@/libs/supabaseAdmin";
+import {stripe} from "@/libs/stripe";
 
 const relevantEvents = new Set([
     'product.created',
